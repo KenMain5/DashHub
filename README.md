@@ -8,11 +8,16 @@
 DashHub is an all-in-One Daily Planner which would have the features users would need to start the day. Currently, this application would focus more on the backend
 to practice my Java programming skills and show minimal React application skills. To see more of my frontend development skills, please see my other projects. 
 
+<div align='center'>
+	<img src="https://github.com/KenMain5/DashHub/blob/6f22d864f903cf7c693e5308f4ef689fb91a505b/server/dailydash/src/main/resources/githubReadMe/InitialApplicationLogic.png" height="400"> 
+</div>
+
+
 <h2>Features</h2>
 
 <div>
   <ul>
-    <li><strong>Weather:</strong> The application will check the daily weather to start your day </li>
+    <li><strong>Weather:</strong> The application will check the weather to start your day and updates hourly </li>
   </ul>
 </div>
 
