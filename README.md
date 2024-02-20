@@ -18,7 +18,7 @@ to practice my Java programming skills and show minimal React application skills
 <div>
   <ul>
     <li><strong>Weather:</strong> The application will check the weather to start your day and updates hourly </li>
-  </ul>
+    <li><strong>User Sign In:</strong> The application includes functionality for users to sign in. </li>  </ul>
 </div>
 
 
