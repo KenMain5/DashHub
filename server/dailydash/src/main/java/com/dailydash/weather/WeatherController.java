@@ -1,6 +1,5 @@
-package com.dailydash.weather.controller;
+package com.dailydash.weather;
 
-import com.dailydash.weather.service.WeatherService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
@@ -19,7 +18,5 @@ public class WeatherController {
         double lat = 39.9526;
         double lon = -75.1652;
         return weatherService.getWeather(lat, lon);
-
-
     }
 }

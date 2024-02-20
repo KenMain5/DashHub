@@ -1,4 +1,4 @@
-package com.dailydash.weather.service;
+package com.dailydash.weather;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,4 +31,6 @@ public class WeatherService {
                 .retrieve()
                 .bodyToMono(String.class);
     }
+
+
 }

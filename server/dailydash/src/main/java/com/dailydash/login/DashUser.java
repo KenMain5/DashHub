@@ -1,35 +1,33 @@
-package com.dailydash.login.entity;
+package com.dailydash.login;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.dailydash.city.City;
+import jakarta.persistence.*;
 
 @Entity
 public class DashUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String username;
     private String password;
-    private String city;
+    @ManyToOne
+    private City city;
 
-    public DashUser(){
 
-    }
+    public DashUser(){}
 
-    public DashUser(String username, String password, String city) {
+    public DashUser(String username, String password, City city) {
         this.username = username;
         this.password = password;
         this.city = city;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,11 +47,11 @@ public class DashUser {
         this.password = password;
     }
 
-    public String getCity() {
+    public City getCity() {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(City city) {
         this.city = city;
     }
 

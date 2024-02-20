@@ -1,4 +1,4 @@
-package com.dailydash.weather.entity;
+package com.dailydash.weather;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,5 +11,9 @@ public class WeatherEntity {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
+    private String city;
 
+    private double temperature;
+
+    private String currentWeather;
 }

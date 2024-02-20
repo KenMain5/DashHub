@@ -1,11 +1,16 @@
 package com.dailydash;
 
-import com.dailydash.login.dao.DashUserDao;
-import com.dailydash.login.entity.DashUser;
+
+import com.dailydash.city.City;
+import com.dailydash.city.CityServices;
+import com.dailydash.login.DashUser;
+import com.dailydash.login.DashUserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import java.util.Optional;
 
 @SpringBootApplication
 public class DailydashApplication {
@@ -15,22 +20,14 @@ public class DailydashApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(DashUserDao userDao) {
+	public CommandLineRunner commandLineRunner(CityServices cityServices) {
 		return runner -> {
-			addUsersDB(userDao);
 
+			testingMethods(cityServices);
 		};
 	}
 
-		private void addUsersDB(DashUserDao userDao){
-			System.out.println("creating new user");
-			DashUser tempUser = new DashUser("eatgrass921", "FU963!", "LA");
+		private void testingMethods(CityServices cityServices){
 
-			System.out.println("Saving the student");
-			userDao.addUser(tempUser);
-
-			System.out.println("Saved student. Generated id:" + tempUser.getId());
-	}
-
-
+		}
 }
