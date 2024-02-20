@@ -24,12 +24,15 @@ public class CityServices {
         this.cityRepository = cityRepository;
     }
 
-    public void addCity(){
-
+    public void addCity(City city){
+        cityRepository.save(city);
     }
 
 
 
+
+
+    //
     public Optional<City> findCityInfo(String cityToFind) {
         Resource resource = new ClassPathResource("data/citiesData.csv");
 

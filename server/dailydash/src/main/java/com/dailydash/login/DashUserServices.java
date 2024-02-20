@@ -21,7 +21,6 @@ public class DashUserServices {
 
     public void addUser(DashUser user){
         dashUserRepository.save(user);
-
     }
 
     public boolean verifyUser(String userName, String password){
