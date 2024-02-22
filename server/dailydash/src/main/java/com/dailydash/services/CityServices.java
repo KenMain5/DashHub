@@ -1,7 +1,8 @@
-package com.dailydash.city;
+package com.dailydash.services;
 
+import com.dailydash.entity.City;
+import com.dailydash.repository.CityRepository;
 import com.opencsv.bean.CsvToBeanBuilder;
-import org.aspectj.apache.bcel.util.ClassPath;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -9,8 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +31,7 @@ public class CityServices {
 
 
 
-    //
+
     public Optional<City> findCityInfo(String cityToFind) {
         Resource resource = new ClassPathResource("data/citiesData.csv");
 

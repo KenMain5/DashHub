@@ -1,10 +1,8 @@
-package com.dailydash.weather;
+package com.dailydash.entity;
 
-import com.dailydash.city.City;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.Objects;
 
 @Entity

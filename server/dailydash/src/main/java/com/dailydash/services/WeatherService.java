@@ -1,4 +1,4 @@
-package com.dailydash.weather;
+package com.dailydash.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

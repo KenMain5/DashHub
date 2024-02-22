@@ -1,6 +1,5 @@
-package com.dailydash.city;
+package com.dailydash.entity;
 
-import com.dailydash.weather.Weather;
 import com.opencsv.bean.CsvBindByName;
 import jakarta.persistence.*;
 

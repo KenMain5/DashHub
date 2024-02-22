@@ -1,6 +1,6 @@
-package com.dailydash.login;
+package com.dailydash.entity;
 
-import com.dailydash.city.City;
+import com.dailydash.entity.City;
 import jakarta.persistence.*;
 
 @Entity

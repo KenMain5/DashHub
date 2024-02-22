@@ -1,7 +1,9 @@
-package com.dailydash.login;
+package com.dailydash.controller;
 
-import com.dailydash.city.City;
-import com.dailydash.city.CityServices;
+import com.dailydash.entity.City;
+import com.dailydash.services.DashUserServices;
+import com.dailydash.services.CityServices;
+import com.dailydash.entity.DashUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

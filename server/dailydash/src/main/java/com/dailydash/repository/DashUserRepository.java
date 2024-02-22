@@ -1,5 +1,6 @@
-package com.dailydash.login;
+package com.dailydash.repository;
 
+import com.dailydash.entity.DashUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

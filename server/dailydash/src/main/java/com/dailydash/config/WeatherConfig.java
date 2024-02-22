@@ -1,4 +1,4 @@
-package com.dailydash.weather;
+package com.dailydash.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;

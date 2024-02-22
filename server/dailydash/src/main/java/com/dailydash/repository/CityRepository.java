@@ -1,5 +1,6 @@
-package com.dailydash.city;
+package com.dailydash.repository;
 
+import com.dailydash.entity.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

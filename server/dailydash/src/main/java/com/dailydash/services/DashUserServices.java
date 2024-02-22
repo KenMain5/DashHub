@@ -1,6 +1,7 @@
-package com.dailydash.login;
+package com.dailydash.services;
 
-import com.dailydash.city.CityRepository;
+import com.dailydash.entity.DashUser;
+import com.dailydash.repository.DashUserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
