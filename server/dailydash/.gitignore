@@ -3,7 +3,9 @@
 *.pid
 .DS_Store
 HELP.md
-application.properties
+
+##Ignore application.properties
+src/main/resources/application.properties
 
 ### Maven ###
 target/
