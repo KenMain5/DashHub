@@ -42,6 +42,7 @@ This is one of the projects I'm planning to put a lot of efforts on. I believe t
 more thorough understanding of Java/Spring Framework. 
   
 How to implement the MVC Design Pattern
+	-Intestesting problem I've encountered and learned from was that my frontend kept receiving a 401 error when attempting to register a user. The problem came 		from the DTO property names are not matching up with the properties being sent via JSON. I initally thought that as long as they are in the same order, the 		@RequestBody annotation would automatically handle it. 
   
 How to connect to a deployed Postgres database and send data. 
     
