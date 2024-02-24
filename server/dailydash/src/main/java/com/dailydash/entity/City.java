@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import java.util.Objects;
 
+
 @Entity
 public class City {
 

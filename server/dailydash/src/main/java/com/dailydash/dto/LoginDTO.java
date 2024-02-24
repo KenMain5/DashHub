@@ -1,2 +1,12 @@
-package com.dailydash.dto;public class LoginDTO {
+package com.dailydash.dto;
+import lombok.Builder;
+import lombok.Data;
+
+
+@Data
+@Builder
+public class LoginDTO {
+    private String email;
+    private String password;
 }
+

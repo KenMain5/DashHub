@@ -14,15 +14,5 @@ public class DailydashApplication {
 		SpringApplication.run(DailydashApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner commandLineRunner(CityServices cityServices) {
-		return runner -> {
 
-			testingMethods(cityServices);
-		};
-	}
-
-		private void testingMethods(CityServices cityServices){
-
-		}
 }

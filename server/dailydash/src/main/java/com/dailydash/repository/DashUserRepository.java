@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface DashUserRepository extends JpaRepository<DashUser, Long> {
-    Optional<DashUser> findDashUserByUsernameAndPassword(String username, String password);
-    Boolean existsByUsername(String username);
+    Optional<DashUser> findDashUserByEmailAndPassword(String email, String password);
 }
